@@ -8,16 +8,23 @@ using namespace std;
 
 int main()
 {
+
 	ifstream fin_plaintext("plaintext.txt");
 	ostringstream buffer_plaintext;
 	buffer_plaintext << fin_plaintext.rdbuf();
 	string plaintext_str = buffer_plaintext.str();
+
 	ifstream fin_cheie("key.txt");
 	ostringstream buffer_cheie;
 	buffer_cheie << fin_cheie.rdbuf();
-	string cheie_str = buffer_plaintext.str();
+	string cheie_str = buffer_cheie.str();
 	vector<bool> plaintext = text_to_bin(plaintext_str);
 	vector<bool> cheie = text_to_bin(cheie_str);
+	
+	if (cheie.size() != 128) {
+		cout << "key is not the size of 128 bits";
+		return 0;
+	}
 
 	bool choice;
 	vector<bool> ciphertextt;
@@ -44,7 +51,7 @@ int main()
 	auto stop = chrono::high_resolution_clock::now();
 	auto durata = chrono::duration_cast<chrono::milliseconds>(stop - start);
 
-	cout << "The process took " << durata/1000 << " seconds";
+	cout << "The process took " << durata;
 
 	ofstream fout_plaintext("deciphered_plaintext.txt");
 	if (fout_plaintext.is_open()) {
