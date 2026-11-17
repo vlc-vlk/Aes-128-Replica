@@ -48,6 +48,8 @@ int main()
 
 	vector<bool> decriptaj = DECRIPTARE_AES_128_ECB_MODE(ciphertextt, cheie);
 
+	cout << "The plaintext was encrypted in ciphertext.txt and decrypted in deciphered_plaintext.txt\n";
+
 	auto stop = chrono::high_resolution_clock::now();
 	auto durata = chrono::duration_cast<chrono::milliseconds>(stop - start);
 
@@ -58,6 +60,7 @@ int main()
 		fout_plaintext << bin_to_text(decriptaj);
 		fout_plaintext.close();
 	}
+	system("pause");
     return 0;
 }
 
