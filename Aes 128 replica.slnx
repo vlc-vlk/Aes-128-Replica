@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Aes 128 replica/Aes 128 replica.vcxproj" Id="3d52ec25-28b6-4894-84cf-5ee685a431d3" />
+</Solution>
