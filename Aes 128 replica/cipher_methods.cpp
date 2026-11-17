@@ -74,12 +74,8 @@ vector<bool> AES_128_CIFRUL(vector<bool> plaintext, vector<vector<bool>> cheile_
 	for (int runda = 1; runda <= 9; runda++) {
 		state = substituire_rijndael(state);
 
-		//cout << "inainte de shift si mix: " << endl << bin_to_hex(state[0]) << endl << bin_to_hex(state[1]) << endl << bin_to_hex(state[2]) << endl << bin_to_hex(state[3]) << endl;
-
 		state = shift_rows(state);
 		state = mix_columns(state);
-
-		//cout << "dupa shift si mix: " << endl << bin_to_hex(state[0]) << endl << bin_to_hex(state[1]) << endl << bin_to_hex(state[2]) << endl << bin_to_hex(state[3]) << endl << endl;
 
 		state = add_round_key(state, cheile_runda[runda]);
 	}
@@ -134,5 +130,3 @@ vector<bool> INV_AES_128_CIFRUL(vector<bool> ciphertext, vector<vector<bool>> ch
 }
 
 vector<bool> DECRIPTARE_AES_128_ECB_MODE_PLUS(vector<bool>, vector<vector<bool>>);
-
-//mayday mayday
