@@ -737,3 +737,5 @@ int gaseste_keysize(vector<bool> binar) {
     else
         return cei_mai_mari[1];
 }
+
+//mayaday mayday

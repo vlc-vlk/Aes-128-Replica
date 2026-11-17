@@ -134,3 +134,5 @@ vector<bool> INV_AES_128_CIFRUL(vector<bool> ciphertext, vector<vector<bool>> ch
 }
 
 vector<bool> DECRIPTARE_AES_128_ECB_MODE_PLUS(vector<bool>, vector<vector<bool>>);
+
+//mayday mayday
