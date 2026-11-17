@@ -61,6 +61,9 @@ int main()
 		fout_plaintext.close();
 	}
 	system("pause");
+	std::cout << "\nPress Enter to exit...";
+	std::cin.ignore();
+	std::cin.get();
     return 0;
 }
 
