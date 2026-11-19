@@ -14,8 +14,10 @@ plaintext.txt has the plaintext, key.txt has the key, ciphertext.txt is where th
 
 ## Performance:
 For a large file (size of 1,23 MB) the program executes the fast method in 5388403ms and the slow method in 641139ms. This gives a 16,0239.% increase in time-efficiency :)
+Keep in mind that it is designed to work only with 128-bit keys (16 characters), from the name "AES-128".
 
 ## To run the program quickly from the exe:
 1. Go to the [Releases](https://github.com/vlc-vlk/Aes-128-Replica/releases/tag/v1.00) page.
 2. Download the `.zip` archive.
 3. Extract the files and double-click the `.exe` file to launch the CLI menu.
+The plaintext.txt and key.txt files have by default a key and some text to encipher, but I encourage you to enter any text and any 128-bit key (16 characters).
