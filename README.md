@@ -1,9 +1,9 @@
 # Aes 128 replica
 # Welcome!
-This is a replica of the famous AES-128 cipher. It is entirely home-made, from the conversion functions between datatypes to the assembled cipher, and pads using the PKCS7 standard.  
+This is a replica of the famous AES-128 cipher. It is entirely home-made, from the conversion functions between datatypes to the assembled cipher, and pads by the PKCS7 standard.  
 It is made in C++, and implements 2 methods as follows:  
-The slow method has the mix rows and shift columns as separate steps.  
-The fast method combines mix rows and shift columns in one single step.  
+A slow method which has the mix rows and shift columns as separate steps.  
+A fast method which combines mix rows and shift columns in one single step.  
 
 ## Structure:
 utils has elementary data-manipulation and datatype-conversion functions  
