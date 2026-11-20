@@ -10,7 +10,7 @@ A fast method which combines mix rows and shift columns in one single step.
 *`utils_AES` has the functions AES needs for data manipulation and the 4 steps for each round  
 *`cipher_methods` has the cipher put altogether, the fast and the slow method  
 *`main` has the CLI logic and file manipulation  
-*`plaintext.txt` has the plaintext, *`key.txt has` the key, *`ciphertext.txt` is where the ciphertext will be written and *`deciphered_plaintext.txt` is where the program writes the deciphered text (delete it's contents before executing to see that the program works as intended)
+*`plaintext.txt` has the plaintext, `key.txt has` the key, `ciphertext.txt` is where the ciphertext will be written and `deciphered_plaintext.txt` is where the program writes the deciphered text (delete it's contents before executing to see that the program works as intended)
 
 ## Performance:
 For a large file (size of 1,23 MB) the program executes the fast method in 5388403ms and the slow method in 641139ms. This gives a 16,0239.% increase in time-efficiency :)
